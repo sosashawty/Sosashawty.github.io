@@ -1,15 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>sys32.exe</title>
-  <meta name="color-scheme" content="dark" />
-  <style>
-    :root {
-      --green: #00ff66;
-      --dark: #020402;
-      --dim:  rgba(0,255,102,0.25);
+,255,102,0.25);
       --scan: rgba(0,255,102,0.08);
     }
     html, body {
@@ -269,9 +258,9 @@
     setTimeout(endScreen, HOLD_END_MS);
   }
 
-  run();
-  addEventListener("click", run);
-  addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") run(); });
-  </script>
+run();
+addEventListener("click", run);
+addEventListener("keydown", e=>{ if(e.key===" "||e.key==="Enter") run();});
+</script>
 </body>
 </html>
